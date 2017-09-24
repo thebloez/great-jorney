@@ -6,4 +6,5 @@ package com.springMVC.shop;
 public class Tes {
 
     // tes push from intellij IDEA
+    // commit and push from intellij IDEA
 }

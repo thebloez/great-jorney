@@ -3,7 +3,7 @@ package com.springMVC.shop.util;
 import javax.servlet.http.HttpServletRequest;
 import com.springMVC.shop.com.springMVC.shop.model.CartInfo;
 
-public class Util {
+public class Utils {
 	
 	// Products in 	Cart, stored in session
 	public static CartInfo getCartInSession(HttpServletRequest request) {

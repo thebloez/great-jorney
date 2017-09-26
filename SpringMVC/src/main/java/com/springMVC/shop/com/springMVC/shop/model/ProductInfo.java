@@ -1,5 +1,6 @@
 package com.springMVC.shop.com.springMVC.shop.model;
 
+import com.springMVC.shop.entity.Product;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 /**
@@ -15,6 +16,9 @@ public class ProductInfo {
     private CommonsMultipartFile fileData;
 
     public ProductInfo() {
+    }
+
+    public ProductInfo(Product product) {
     }
 
     public ProductInfo(String code, String name, double price) {

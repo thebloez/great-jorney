@@ -1,4 +1,4 @@
-package com.springMVC.shop.com.springMVC.shop.model;
+package com.springMVC.shop.model;
 
 import com.springMVC.shop.entity.Product;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;

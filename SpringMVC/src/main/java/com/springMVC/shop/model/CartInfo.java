@@ -1,4 +1,4 @@
-package com.springMVC.shop.com.springMVC.shop.model;
+package com.springMVC.shop.model;
 
 import java.util.ArrayList;
 import java.util.List;

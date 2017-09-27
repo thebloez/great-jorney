@@ -1,4 +1,4 @@
-package com.springMVC.shop.com.springMVC.shop.model;
+package com.springMVC.shop.model;
 
 import org.hibernate.ScrollMode;
 import org.hibernate.ScrollableResults;

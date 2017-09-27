@@ -1,4 +1,4 @@
-package com.springMVC.shop.com.springMVC.shop.model;
+package com.springMVC.shop.model;
 
 /**
  * Created by Ryan Thebloez on 9/15/2017.

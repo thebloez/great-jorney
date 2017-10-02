@@ -1,8 +1,8 @@
 package com.springMVC.shop.dao;
 
-import com.springMVC.shop.com.springMVC.shop.model.PaginationResult;
-import com.springMVC.shop.com.springMVC.shop.model.ProductInfo;
 import com.springMVC.shop.entity.Product;
+import com.springMVC.shop.model.PaginationResult;
+import com.springMVC.shop.model.ProductInfo;
 
 /**
  * Created by Ryan Thebloez on 9/17/2017.

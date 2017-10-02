@@ -1,11 +1,12 @@
 package com.springMVC.shop.impl;
 
-import com.springMVC.shop.com.springMVC.shop.model.*;
 import com.springMVC.shop.dao.OrderDAO;
 import com.springMVC.shop.dao.ProductDAO;
 import com.springMVC.shop.entity.Order;
 import com.springMVC.shop.entity.OrderDetail;
 import com.springMVC.shop.entity.Product;
+import com.springMVC.shop.model.*;
+
 import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

@@ -109,7 +109,7 @@ public class ApplicationContextConfig {
         HibernateTransactionManager transactionManager = new HibernateTransactionManager(sessionFactory);
         return transactionManager;
     }
-
+    
     @Bean(name = "accountDAO")
     public AccountDAO getApplicantDAO() {
         return new AccountDAOImpl();

@@ -1,9 +1,9 @@
 package com.springMVC.shop.dao;
 
-import com.springMVC.shop.com.springMVC.shop.model.CartInfo;
-import com.springMVC.shop.com.springMVC.shop.model.OrderDetailInfo;
-import com.springMVC.shop.com.springMVC.shop.model.OrderInfo;
-import com.springMVC.shop.com.springMVC.shop.model.PaginationResult;
+import com.springMVC.shop.model.CartInfo;
+import com.springMVC.shop.model.OrderDetailInfo;
+import com.springMVC.shop.model.OrderInfo;
+import com.springMVC.shop.model.PaginationResult;
 
 import java.util.List;
 

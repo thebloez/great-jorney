@@ -1,14 +1,17 @@
 package com.springMVC.shop.controller;
 
-import com.springMVC.shop.com.springMVC.shop.model.CartInfo;
-import com.springMVC.shop.com.springMVC.shop.model.CustomerInfo;
-import com.springMVC.shop.com.springMVC.shop.model.PaginationResult;
-import com.springMVC.shop.com.springMVC.shop.model.ProductInfo;
+import java.io.IOException;
+
 import com.springMVC.shop.dao.OrderDAO;
 import com.springMVC.shop.dao.ProductDAO;
 import com.springMVC.shop.entity.Product;
+import com.springMVC.shop.model.CartInfo;
+import com.springMVC.shop.model.CustomerInfo;
+import com.springMVC.shop.model.PaginationResult;
+import com.springMVC.shop.model.ProductInfo;
 import com.springMVC.shop.util.Utils;
 import com.springMVC.shop.validator.CustomerInfoValidator;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Propagation;
@@ -22,6 +25,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * Created by Ryan Thebloez on 9/26/2017.
@@ -245,6 +249,22 @@ public class MainController {
         // redirect to successful page
         return "redirect:/shoppingCartFinalize";
     }
-
-
+    
+    @RequestMapping(value = { "/productImage" }, method = RequestMethod.GET)
+    public void productImage(HttpServletRequest request, HttpServletResponse response, 
+    		Model model, @RequestParam("code") String code) throws IOException{
+    	
+    	Product product = null;
+    	if (code != null){
+    		product = this.productDAO.findProduct(code);
+    	}
+    	
+    	if (product != null && product.getImage() != null){
+    		response.setContentType("image/jpg, image/jpg, image/png, image/gif");
+    		response.getOutputStream().write(product.getImage());	
+    	}
+    	
+    	response.getOutputStream().close();
+    }
+    
 }

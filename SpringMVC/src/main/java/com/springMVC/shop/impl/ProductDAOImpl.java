@@ -11,10 +11,10 @@ import org.hibernate.type.TrueFalseType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.springMVC.shop.com.springMVC.shop.model.PaginationResult;
-import com.springMVC.shop.com.springMVC.shop.model.ProductInfo;
 import com.springMVC.shop.dao.ProductDAO;
 import com.springMVC.shop.entity.Product;
+import com.springMVC.shop.model.PaginationResult;
+import com.springMVC.shop.model.ProductInfo;
 
 // Transactional for Hibernate
 @Transactional

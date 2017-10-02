@@ -1,7 +1,8 @@
 package com.springMVC.shop.util;
 
 import javax.servlet.http.HttpServletRequest;
-import com.springMVC.shop.com.springMVC.shop.model.CartInfo;
+
+import com.springMVC.shop.model.CartInfo;
 
 public class Utils {
 	
